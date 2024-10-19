@@ -16,33 +16,7 @@ VanillaTilt.init(document.querySelectorAll(".box"), {
   speed: 400
 });
 
-const swiper = new Swiper('.swiper-container', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
+
 new WOW().init();
 
 var wow = new WOW(
@@ -61,3 +35,5 @@ var wow = new WOW(
   }
 );
 wow.init();
+
+
