@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- wow js -->
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
+  <!-- End Swiprt -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+    integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+  <title>Hamza Project</title>
+</head>
+
+<body dir="rtl">
+  <section class="sec">
+    <!-- <nav"> -->
+    <header style="position: fixed;">
+      <!-- <div class="container"> -->
+      <a href="#"> <img src="img/logo.png" class="logo" /></a>
+      <div class="togglemenu" onclick="menuToggle()"></div>
+      <ul class="navigation">
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#About">عننا</a></li>
+        <li><a href="#Product">المنتجات</a></li>
+        <li><a href="#Service">الخدمات</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+      <!-- </div> -->
+    </header>
+  <!-- </nav> -->
+    <div class="content">
+      <div class="text-box">
+        <h2>شركة <br /><span>ابو طلال</span></h2>
+        <p>
+          لجميع انواع العطور والبخور وادوات التجميل وتعمل في السودان
+
+        </p>
+        <a href="#Product">عرض المنتجات</a>
+      </div>
+      <div class="imgbox">
+        <img src="img/product-1.png" class="blackone wow animate__animated animate__slideInLeft" />
+      </div>
+    </div>
+    <ul class="thumb">
+      <li>
+        <img src="img/product-1.png" onclick="imgslider('img/product-1.png');changeBgColor('#3664f4')" />
+      </li>
+      <li>
+        <img src="img/product-2.png" onclick="imgslider('img/product-2.png');changeBgColor('#fe979c')" />
+      </li>
+      <li>
+        <img src="img/product-1.png" onclick="imgslider('img/product-1.png');changeBgColor('#4ca771')" />
+      </li>
+    </ul>
+    <ul class="sci">
+      <li>
+        <a href="#"><img src="img/face.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/ins.png" alt="" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/you.png" alt="" /></a>
+      </li>
+    </ul>
+  </section>
+  <!-- Start About -->
+  <div class="special-heading">
+    <h2>عن الشركة</h2>
+  </div>
+  <section class="About wow bounceInUp" id="About">
+    <div class="container-imges">
+      <img src="img/photo2.jpg" alt="" class="wow animate__animated animate__zoomIn">
+    </div>
+    <div class="container-texts">
+      <h1>عن <span>شركة</span></h1>
+      <h5> <span>ابو</span> طلال</h5>
+      <p>
+        شركه أبو طلال للعطور تعمل في مجال العطور في السودان في جميع انواع العطور والبخور وادوات تجميل واجمل الاكسسوارات
+        وأيضا في مجال الصندل والمسك والعود والعنبر والعوديه متوفرة في جميع ولايات السودان المختلفة عبر مناديب الشركة في
+        كل الولايات بأسعار موحدة شركة أبو طلال لي العطور هي الشركه الأولي في السودان في مجال العطور والتركيبات العطرية
+        المختلفة محلية وعالمية وهي الأفضل في التعامل مع العملاء
+        في الاداره الشركه السيد: بانقا الهادي محمد علي
+      </p>
+    </div>
+  </section>
+  <!-- End About -->
+  <!-- start -->
+  <div class="special-heading">
+    <h2>عرض المنتجات</h2>
+  </div>
+  <section class="allProduct wow animate__animated animate__zoomIn" id="Product">
+    <div class="container">
+      <div class="box">
+        <h2 class="name"></h2>
+        <a href="#" class="Buy"></a>
+        <div class="circle"></div>
+        <img src="img/photo3.jpg" class="product" />
+      </div>
+      <div class="box">
+        <h2 class="name"></h2>
+        <a href="#" class="Buy"></a>
+        <div class="circle"></div>
+        <img src="img/photo7.jpg" class="product" />
+      </div>
+      <div class="box">
+        <h2 class="name"></h2>
+        <a href="#" class="Buy"></a>
+        <div class="circle"></div>
+        <img src="img/photo4.jpg" class="product " />
+      </div>
+    </div>
+  </section>
+  <!-- End -->
+  <!-- Start How it Works -->
+  <div class="special-heading">
+    <h2>خدماتنا</h2>
+  </div>
+  <section class="how-it-works" id="Service">
+    <div class="container-serv">
+
+      <div class="how-it-works-wrapper">
+        <div class="section-img-wrapper">
+          <img src="img/photo1.jpg" alt="" class="wow animate__animated animate__slideInLeft">
+        </div>
+        <div class="steps-wrapper">
+          <div class="step-item">
+            <div class="step-img-wrapper">
+              <img src="img/work-steps-1.png" alt="">
+            </div>
+            <div class="step-text">
+              <h4>عطور سائلة</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
+                recusandae debitis vel</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-img-wrapper">
+              <img src="img/work-steps-2.png" alt="">
+            </div>
+            <div class="step-text">
+              <h4>الاكسسوارات</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
+                recusandae debitis vel</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-img-wrapper">
+              <img src="img/work-steps-3.png" alt="">
+            </div>
+            <div class="step-text">
+              <h4>العود</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
+                recusandae debitis vel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End How it Works -->
+
+  <!-- new swiper -->
+   <!-- <section> -->
+  <div class="swiper-container ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/product-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/product-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/product-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/product-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/product-1.png" alt=""></div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+<!-- </section> -->
+  <!-- Start New footer viedo -->
+  <footer>
+    <div class="container-footer wow animate__animated animate__zoomIn" id="contact">
+      <div class="sec aboutus">
+        <h2>عننا</h2>
+        <p>
+          شركة أبو طلال للعطور تعمل في مجال العطور في السودان في جميع انواع العطور والبخور وادوات تجميل واجمل
+          الاكسسوارات وأيضا في مجال الصندل والمسك والعود والعنبر والعوديه متوفرة في جميع ولايات السودان المختلفة عبر
+          مناديب الشركة في كل الولايات بأسعار موحدة شركة أبو طلال لي العطور هي الشركه الأولي في السودان في مجال العطور
+          والتركيبات العطرية المختلفة محلية وعالمية وهي الأفضل في التعامل مع
+        :في الاداره الشركه السيد: 
+        <span class="ban">بانقا الهادي محمد علي</span>
+        </p>
+        <ul class="scial-footer">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="sec all-links">
+        <h2>الصفحات</h2>
+        <ul>
+          <li><a href="#About">عن الشركة</a></li>
+          <li><a href="#Product">عرض المنتجات</a></li>
+          <li><a href="#Service">خدماتنا</a></li>
+          <li><a href="#">الرئيسية</a></li>
+        </ul>
+      </div>
+      <div class="sec contact ">
+        <h2>تواصل معنا</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span>الخرطوم - امدرمان</span>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p><a href="tel:0123456789">00249912353952</a>
+              <br>
+            </p>
+          </li>
+          <li>
+            <span> <i class="fa-brands fa-whatsapp"></i></span>
+            <p> <a href="tel:0123456789">00249965000065</a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p><a href="mail:Test@gmail.com">banagaalhadi@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>Copyright 2024 </p>
+  </div>
+  <!-- End New footer viedo -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+  <script src="vanilla-tilt.min.js"></script>
+  <script src="wow.js"></script>
+  <script src="main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script> -->
+</body>
+
+</html>
