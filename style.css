@@ -286,7 +286,7 @@ header ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 1200px;
-    /* transform-style: preserve-3d; */
+    transform-style: preserve-3d;
 }
 .container .box {
     position: relative;
@@ -295,7 +295,7 @@ header ul li a:hover {
     margin: 40px;
     background: #050000;
     border-radius: 20px;
-    /* transform-style: preserve-3d; */
+    transform-style: preserve-3d;
 }
 .container .box::before {
     content: 'NIKE';
@@ -540,7 +540,22 @@ header ul li a:hover {
      .container .box:nth-child(3) .Buy {
         background: #fb4b4f;
      }
+     /* pagin */
+     .swiper-container {
+        display: flex;
+        /* width: 100%;
+        height: 100%; */
+     }
+     .swiper-slide {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+      
+     }
  }
+ 
  /* End Mobile Design */
 /* End Product */
 
