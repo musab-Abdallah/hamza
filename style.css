@@ -286,7 +286,7 @@ header ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 1200px;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
 }
 .container .box {
     position: relative;
@@ -295,7 +295,7 @@ header ul li a:hover {
     margin: 40px;
     background: #050000;
     border-radius: 20px;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
 }
 .container .box::before {
     content: 'NIKE';
@@ -404,7 +404,146 @@ header ul li a:hover {
  .container .box:nth-child(3) .Buy {
     background: #fb4b4f;
  }
+ /* Start Mobile Design */
+ @media (min-width:576px) and (max-width:767px) {
+    .allProduct  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background: #ececec; */
+        /* background: #013237; */
+        background: #dae3e3;
+    }
+    .container {
+         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 1200px;
+        /* transform-style: preserve-3d; */
+    }
+    .container .box {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        margin: 40px;
+        background: #050000;
+        border-radius: 20px;
+        /* transform-style: preserve-3d; */
+    }
+    .container .box::before {
+        content: 'NIKE';
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 6em;
+        font-weight: 900;
+        color: #fff;
+        font-style: italic;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .container .box:hover::before,
+    .container .box:hover::after
+    {
+        opacity: 0.04;
+    }
+    .container .box::after {
+        content: 'SHOES';
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 5em;
+        font-weight: 900;
+        color: #fff;
+        font-style: italic;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .container .box .name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        /* transform-style: preserve-3d;
+        transform: translate3d(0,0,75px); */
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 10;
+    }
+    .container .box:hover .name {
+        /* top: 40px; */
+        opacity: 1;
+    }
+    .container .box .Buy {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        /* transform-style: preserve-3d;
+        transform: translate3d(-50%,0,75px); */
+        color: #fff;
+        background: #333;
+        padding: 10px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 10;
+    }
+    .container .box:hover .Buy {
+        /* bottom: 30px; */
+        opacity: 1;
+    }
+    .container .box .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: 0.5s;
+        background: #fff;
+        /* transform-style: preserve-3d;
+        transform: translate3d(-50%,-50%,50px); */
+        z-index: 10;
+        opacity: 1;
+    }
+    /* .container .box:hover .circle {
+    
+    } */
+     .container .box .product {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 200px;
+        transition: 0.5s;
+        z-index: 11;
+        /* transform-style: preserve-3d;
+        transform: translate3d(-50%,-50%,0px) rotate(-15deg); */
+     }
+     /* .container .box:hover .product {
+        transform: translate3d(-20%,-20%,100px) rotate(-10deg);
+     } */
+     .container .box:nth-child(1) .circle,
+     .container .box:nth-child(1) .Buy {
+        background: #f9ce69;
+     }
+     .container .box:nth-child(2) .circle,
+     .container .box:nth-child(2) .Buy {
+        background: #9bdc28;
+     }
+     .container .box:nth-child(3) .circle,
+     .container .box:nth-child(3) .Buy {
+        background: #fb4b4f;
+     }
+ }
+ /* End Mobile Design */
 /* End Product */
+
 /* Start Components */
 .special-heading {
     position: relative;
