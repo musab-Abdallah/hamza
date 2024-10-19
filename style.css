@@ -144,7 +144,14 @@ header ul li a:hover {
     transform: translateY(-15px);
 }
 .thumb li img {
-    max-width: 40px;
+    max-width: 90px;
+    /* width: 100%; */
+    height: 80%;
+    border-radius: 50%;
+}
+.imgbox .blackone {
+    border-radius: 50%;
+    background-color: #dbe5ec;
 }
 .sci {
     position: absolute;
@@ -851,6 +858,7 @@ font-size: 23px;
   }
   .About .container-imges img {
     width: 90%;
+    border-radius: 10px;
   }
   .About .container-texts {
    
@@ -1118,7 +1126,8 @@ footer .contact .info li span i {
 }
 .swiper-container {
     width: 100%;
-    height: 100vh; /* Full-screen height */
+    /* height: 100vh;  */
+    /* Full-screen height */
   }
   
   .swiper-slide img {
