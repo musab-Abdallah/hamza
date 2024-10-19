@@ -36,4 +36,37 @@ var wow = new WOW(
 );
 wow.init();
 
+  var swiper = new Swiper('.swiper-container', {
+    loop: true, // Enables looping
+    autoplay: {
+      delay: 3000, // Auto slide every 3 seconds
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 1, // Show 1 slide at a time
+    spaceBetween: 30, // Space between slides
+    breakpoints: {
+      640: {
+        slidesPerView: 1, // 1 slide for smaller screens
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2, // 2 slides for medium screens
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3, // 3 slides for larger screens
+        spaceBetween: 40,
+      },
+    },
+  });
+
+
+
 
