@@ -62,10 +62,11 @@ wow.init();
       },
       1024: {
         slidesPerView: 3, // 3 slides for larger screens
-        // spaceBetween: 40,
+        // spaceBetween: 100,
       },
     },
   });
+
 
 
 
