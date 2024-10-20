@@ -54,15 +54,15 @@ wow.init();
     breakpoints: {
       640: {
         slidesPerView: 1, // 1 slide for smaller screens
-        spaceBetween: 20,
+        // spaceBetween: 20,
       },
       768: {
         slidesPerView: 2, // 2 slides for medium screens
-        spaceBetween: 30,
+        // spaceBetween: 30,
       },
       1024: {
         slidesPerView: 3, // 3 slides for larger screens
-        spaceBetween: 40,
+        // spaceBetween: 40,
       },
     },
   });
