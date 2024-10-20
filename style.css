@@ -1122,10 +1122,10 @@ footer .contact .info li span i {
         height: auto;
         /* object-fit: cover;  */
       }
-      .swiper-paginationn {
+      /* .swiper-paginationn {
         margin: auto;
         text-align: center;
-      }
+      } */
 }
 .swiper-container {
     width: 70%;
