@@ -47,7 +47,7 @@ wow.init();
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
+      clickable: false,
     },
     slidesPerView: 1, // Show 1 slide at a time
     spaceBetween: 30, // Space between slides
