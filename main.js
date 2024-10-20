@@ -46,11 +46,11 @@ wow.init();
       prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: false,
+      el: '.swiper-paginationn',
+      clickable: true,
     },
     slidesPerView: 1, // Show 1 slide at a time
-    spaceBetween: 30, // Space between slides
+    spaceBetween: 1, // Space between slides
     breakpoints: {
       640: {
         slidesPerView: 1, // 1 slide for smaller screens
