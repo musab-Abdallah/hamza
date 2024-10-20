@@ -1116,18 +1116,25 @@ header {
   overflow: hidden;
 }
 .swiper-slide img {
-  /* width: 70%;
-    height: auto; */
-  /* object-fit: cover;  */
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
-
-/* Ensures the image covers the slide properly */
-
-/* .swiper-paginationn {
-    margin: auto;
-    text-align: center;
-  } */
 /* SLider End */
+/* Start menu-nav */
+/* .nav-menuu {
+  display: none; 
+} */
+/* إخفاء القائمة في البداية */
+/* .nav-menuu.active {
+  display: block;
+} */
+ /* عرض القائمة عندما تكون فعالة */
+
+@media (min-width: 768px) {
+  /* إظهار القائمة في الشاشات الأكبر */
+  .nav-menu {
+    display: block;
+  }
+}
+/* End menu-nav */
