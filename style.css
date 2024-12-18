@@ -891,14 +891,15 @@ header ul li a:hover {
   justify-content: space-between;
 }
 .About .container-imges {
-  width: 35%;
+  width: 25%;
+  margin-right:5px;
 }
 .About .container-imges img {
   width: 90%;
   border-radius: 10px;
 }
 .About .container-texts {
-  width: 45%;
+  width: 65%;
 }
 p {
   color: black;
@@ -915,9 +916,12 @@ h5 {
   /* about media query */
 
 @media (max-width: 991px) {
-  /* .bout {
-        margin: auto;
-    } */
+  .bout {
+        /* margin: auto; */
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    }
   .About .container-imges img {
     display: none;
     /* flex-direction: column;
